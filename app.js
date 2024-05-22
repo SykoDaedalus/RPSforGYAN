@@ -24,12 +24,15 @@ choices.forEach((choice) => {
         switch(userchoice){
             case "rock":
                 src="pngimg.com - fist_PNG15.png";
+                userRes.setAttribute('class','show');
                 break;
             case "paper":
                 src="old-paper-transparent-background-22.png";
+                userRes.setAttribute('class','show');
                 break;
             case "scissors":
                 src="pngwing.com.png";
+                userRes.setAttribute('class','show');
                 break;
         }
         userRes.setAttribute('src',src);
@@ -47,12 +50,15 @@ function compchoice() {
     switch(arr[no]){
         case "rock":
             src="pngimg.com - fist_PNG15.png";
+            compRes.setAttribute('class','show');
             break;
         case "paper":
             src="old-paper-transparent-background-22.png";
+            compRes.setAttribute('class','show');
             break;
         case "scissors":
             src="pngwing.com.png";
+            compRes.setAttribute('class','show');
             break;
     }
     compRes.setAttribute('src',src);
@@ -86,6 +92,8 @@ reset.addEventListener('click', function() {
     let src = "";
     userRes.setAttribute('src',src);
     compRes.setAttribute('src',src);
+    compRes.setAttribute('class','hide');
+    userRes.setAttribute('class','hide');
 
     choices.forEach((c) => {
         c.style.borderColor = "black";

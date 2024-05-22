@@ -89,3 +89,11 @@ text-align: center;
     background-color: aliceblue;
     color:  rgb(192, 83, 43);
 }
+
+.hide{
+    display : none;
+}
+
+.show{
+    display: block;
+}
