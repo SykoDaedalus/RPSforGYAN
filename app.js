@@ -69,26 +69,31 @@ function checkWin(result, userchoice) {
 
     if (result === userchoice) {
         console.log("draw");
+
         text.innerText = "Draw";
     } else if (userchoice === "rock" && result === "scissors") {
                 console.log("another console for testing");
         console.log("gyan bhai pharma odisha iitbhu banaras")
         text.innerText = "You Won yay! :)";
         userscore += 1;
+
         us.innerText = userscore;
     } else if (userchoice === "paper" && result === "rock") {
         text.innerText = "You Won! :)";
         console.log("gyan bhai pharma odisha iitbhu banaras")
         userscore += 1;
+
         us.innerText = userscore;
     } else if (userchoice === "scissors" && result === "paper") {
         text.innerText = "You Won! :)";
         userscore += 1;
+
         us.innerText = userscore;
         console.log("gyan bhai pharma odisha iitbhu banaras")
     } else {
         text.innerText = "You lose :(";
         compscore += 1;
+
         cs.innerText = compscore;
 
         console.log("gyan bhai pharma odisha iitbhu banaras")
